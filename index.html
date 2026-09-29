@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,16 @@
     <!-- Navigation Header -->
     <header class="navbar">
         <div class="logo">Vikas<span>.dev</span></div>
-        <nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav class="nav-container">
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+                <li><a href="#about" class="nav-item">About</a></li>
+                <li><a href="#skills" class="nav-item">Skills</a></li>
+                <li><a href="#projects" class="nav-item">Projects</a></li>
+                <li><a href="#education" class="nav-item">Education</a></li>
+                <li><a href="mailto:vikasyadavfut1@gmail.com" class="btn-primary">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -30,72 +33,72 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h3>नमस्ते 👋, मैं हूँ</h3>
-            <h1>विकास कुमार</h1>
+            <span class="badge">Welcome to my portfolio 👋</span>
+            <h1>Hi, I'm <span>Vikas Kumar</span></h1>
             <h2>Software Developer & Web Enthusiast</h2>
-            <p>मैं आधुनिक, रेस्पॉन्सिव और हाई-परफॉरमेंस वेब एप्लिकेशन्स बनाने में माहिर हूँ।</p>
+            <p>I specialize in building modern, responsive, and high-performance web applications with clean code and great user experiences.</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn-primary">मेरे प्रोजेक्ट्स देखें</a>
-                <a href="mailto:vikasyadavfut1@gmail.com" class="btn-secondary">संपर्क करें</a>
+                <a href="#projects" class="btn-primary glow-btn">View My Work <i class="fas fa-arrow-right"></i></a>
+                <a href="mailto:vikasyadavfut1@gmail.com" class="btn-secondary">Get In Touch</a>
             </div>
             <div class="social-links">
-                <a href="https://github.com/vikaskumar" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:vikasyadavfut1@gmail.com"><i class="fas fa-envelope"></i></a>
-                <a href="tel:+918809997949"><i class="fas fa-phone"></i></a>
+                <a href="https://github.com/vikaskumar" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:vikasyadavfut1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+918809997949" aria-label="Phone"><i class="fas fa-phone"></i></a>
             </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section">
-        <h2 class="section-title">मेरे बारे में <span>(About Me)</span></h2>
+        <h2 class="section-title">About <span>Me</span></h2>
         <div class="about-card">
-            <p>मैं एक प्रेरित और विवरण-उन्मुख (detail-oriented) <strong>Software Developer</strong> हूँ[span_2](start_span)[span_2](end_span)। मुझे वेब डेवलपमेंट, ऑब्जेक्ट-ओरिएंटेड प्रोग्रामिंग (OOP) और डेटाबेस मैनेजमेंट का गहरा ज्ञान है[span_3](start_span)[span_3](end_span)। मेरा उद्देश्य कुशल, स्केलेबल और आधुनिक सॉफ्टवेयर सॉल्यूशंस तैयार करना है[span_4](start_span)[span_4](end_span)।</p>
+            <p>I am a motivated and detail-oriented <strong>Software Developer</strong> with a strong foundation in Web Development, Object-Oriented Programming (OOP), and Database Management. My goal is to build efficient, scalable, and intuitive software solutions that solve real-world problems.</p>
             <div class="location-tag">
-                <i class="fas fa-map-marker-alt"></i> फतुहा, पटना, बिहार, भारत[span_5](start_span)[span_5](end_span)
+                <i class="fas fa-map-marker-alt"></i> Fatuha, Patna, Bihar, India
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section">
-        <h2 class="section-title">तकनीकी क्षमताएं <span>(Technical Skills)</span></h2>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <i class="fas fa-code"></i>
+                <div class="icon-box"><i class="fas fa-code"></i></div>
                 <h3>Programming</h3>
-                <p>Java, JavaScript[span_6](start_span)[span_6](end_span)</p>
+                <p>Java, JavaScript</p>
             </div>
             <div class="skill-card">
-                <i class="fab fa-react"></i>
+                <div class="icon-box"><i class="fab fa-react"></i></div>
                 <h3>Web Technologies</h3>
-                <p>HTML5, CSS3, React.js, Responsive Design[span_7](start_span)[span_7](end_span)</p>
+                <p>HTML5, CSS3, React.js, Responsive Design</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-database"></i>
+                <div class="icon-box"><i class="fas fa-database"></i></div>
                 <h3>Database & Tools</h3>
-                <p>MySQL, Git, GitHub, VS Code[span_8](start_span)[span_8](end_span)</p>
+                <p>MySQL, Git, GitHub, VS Code</p>
             </div>
             <div class="skill-card">
-                <i class="fas fa-cubes"></i>
+                <div class="icon-box"><i class="fas fa-cubes"></i></div>
                 <h3>Core Concepts</h3>
-                <p>Data Structures & Algorithms Basics, OOP, REST APIs[span_9](start_span)[span_9](end_span)</p>
+                <p>Data Structures, OOPs, REST APIs</p>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="section">
-        <h2 class="section-title">प्रमुख प्रोजेक्ट्स <span>(Key Projects)</span></h2>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
         <div class="projects-grid">
             
             <div class="project-card">
                 <div class="project-info">
                     <h3>HungerHub</h3>
                     <h4>Online Food Delivery Web Application</h4>
-                    <p>HTML, CSS, JavaScript और MySQL का उपयोग करके तैयार किया गया डायनामिक वेब ऐप। इसमें कार्ट मैनेजमेंट, मेन्यू ब्राउज़िंग और सिक्योर डेटाबेस ऑपरेशन्स शामिल हैं[span_10](start_span)[span_10](end_span)।</p>
+                    <p>A dynamic web app featuring cart management, food menu browsing, and secure database interactions.</p>
                     <div class="tags">
-                        <span>HTML/CSS</span><span>JS</span><span>MySQL</span>
+                        <span>HTML/CSS</span><span>JavaScript</span><span>MySQL</span>
                     </div>
                 </div>
             </div>
@@ -104,9 +107,9 @@
                 <div class="project-info">
                     <h3>Task Tracker App</h3>
                     <h4>React.js Application</h4>
-                    <p>React.js पर आधारित सिंगल-पेज एप्लीकेशन, जिसमें डेली टास्क जोड़ने, अपडेट करने, फ़िल्टर करने और डिलीट करने की सुविधा है[span_11](start_span)[span_11](end_span)।</p>
+                    <p>Single-page application allowing users to add, update, filter, and delete daily tasks with reactive state management.</p>
                     <div class="tags">
-                        <span>React.js</span><span>JavaScript</span><span>State Management</span>
+                        <span>React.js</span><span>JavaScript</span><span>CSS3</span>
                     </div>
                 </div>
             </div>
@@ -115,7 +118,7 @@
                 <div class="project-info">
                     <h3>Live Weather Forecast</h3>
                     <h4>API Integrated Web App</h4>
-                    <p>REST APIs के साथ इंटीग्रेटेड ऐप जो यूज़र की सर्च लोकेशन के आधार पर रियल-टाइम मौसम की जानकारी दिखाता है[span_12](start_span)[span_12](end_span)।</p>
+                    <p>Web app integrated with REST APIs showing real-time weather information based on user location search.</p>
                     <div class="tags">
                         <span>REST API</span><span>JavaScript</span><span>Async/Await</span>
                     </div>
@@ -126,9 +129,9 @@
                 <div class="project-info">
                     <h3>Student Management System</h3>
                     <h4>Java & OOP Project</h4>
-                    <p>कोर OOP प्रिंसिपल्स का उपयोग करके बनाया गया एप्लिकेशन जो छात्रों के एकेडमिक रिकॉर्ड पर CRUD ऑपरेशन्स निष्पादित करता है[span_13](start_span)[span_13](end_span)।</p>
+                    <p>Application built using core OOP principles to perform CRUD operations on student academic records.</p>
                     <div class="tags">
-                        <span>Java</span><span>OOPs</span><span>CRUD</span>
+                        <span>Java</span><span>OOPs</span><span>MySQL</span>
                     </div>
                 </div>
             </div>
@@ -138,30 +141,48 @@
 
     <!-- Education Section -->
     <section id="education" class="section">
-        <h2 class="section-title">शिक्षा <span>(Education)</span></h2>
+        <h2 class="section-title">My <span>Education</span></h2>
         <div class="timeline">
             <div class="timeline-item">
                 <h3>BCA (Bachelor of Computer Application)</h3>
                 <h4>CIMAGE College, Patna (2022 - 2025)</h4>
-                <p>अंक / स्कोर: <strong>66.67%</strong>[span_14](start_span)[span_14](end_span)</p>
+                <p>Score: <strong>66.67%</strong></p>
             </div>
             <div class="timeline-item">
                 <h3>Intermediate (I.Sc)</h3>
                 <h4>RLSY College, Bakhtiyarpur (2021 - 2022)</h4>
-                <p>अंक / स्कोर: <strong>70.00%</strong>[span_15](start_span)[span_15](end_span)</p>
+                <p>Score: <strong>70.00%</strong></p>
             </div>
             <div class="timeline-item">
                 <h3>Matriculation</h3>
                 <h4>Infant Jesus Academy, Khusrupur (2020)</h4>
-                <p>अंक / स्कोर: <strong>70.20%</strong>[span_16](start_span)[span_16](end_span)</p>
+                <p>Score: <strong>70.20%</strong></p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Vikas Kumar. Designed with Passion & Code.</p>
+        <p>&copy; 2026 Vikas Kumar. Built with passion & modern design.</p>
     </footer>
 
+    <!-- JavaScript for Mobile Slide Menu -->
+    <script>
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navContainer = document.querySelector('.nav-container');
+        const navItems = document.querySelectorAll('.nav-item');
+
+        mobileMenu.addEventListener('click', () => {
+            navContainer.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                navContainer.classList.remove('active');
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
